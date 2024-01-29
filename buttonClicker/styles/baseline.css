@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    /* background-color: bisque; */
+    font-family: comic sans ms;
+    font-size: 17px;
+}
+
+h1 {
+    font-size: 1.8em;
+}
+
+.page {
+    margin: 0 auto;
+    width: 600px;
+    background-color: white;
+}
+
+.page header {
+    background-color: silver;
+    padding: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.page header input {
+    border: 2px solid black;
+    font-size: 1em;
+    padding: 0.2em;
+}
+main {
+    margin-top: 1em;
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 10px;
+}
+
+main > .leftCol {
+    flex: 2;
+}
+
+main > .rightCol {
+    flex: 1;
+}
+
+section {
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+section > .leftCol {
+    flex: 1;
+}
+
+section > .rightCol {
+    flex: 2;
+}
+
+.login {
+    background-color: #17a2b8;
+    border: 2px solid black;
+    box-shadow: 2px 2px 4px black;
+    width: 5em;
+
+    padding: 0.5em;
+
+    color: white;
+    font-weight: bold;
+}
+
+.login:hover {
+    background-color: white;
+    color: #17a2b8;
+}
+
+.likes {
+    background-color: #ffd966;
+    border: 2px solid black;
+    box-shadow: 2px 2px 4px black;
+
+    padding: 0.5em;
+    margin: 1em;
+
+    color: black;
+    font-weight: bold;
+}
+
+.likes:hover {
+    background-color: black;
+    color: #ffd966;
+}
+
+.addDefinition {
+    background-color: #93c47d;
+    border: 2px solid black;
+    box-shadow: 2px 2px 4px black;
+
+    padding: 0.5em;
+    margin: 1em;
+
+    color: black;
+    font-weight: bold;
+}
+
+.addDefinition:hover {
+    background-color: black;
+    color: #93c47d;
+}
+
+a {
+    color: #17a2b8;
+}
+
+a:hover {
+    color: #93c47d;
+}
