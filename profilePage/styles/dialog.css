@@ -1,0 +1,19 @@
+.dialog {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    background-color: burlywood;
+    display: none;
+    max-width: 300px;
+}
+
+.shade {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: silver;
+    opacity: 60%;
+    display: none;
+}

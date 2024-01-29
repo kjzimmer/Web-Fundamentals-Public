@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <link rel="stylesheet" type="text/css" href="styles/baseline.css">
+        <link rel="stylesheet" type="text/css" href="styles/navbar.css">
+        <link rel="stylesheet" type="text/css" href="styles/dialog.css">
+    </head>
+
+    <body>
+        <header>
+        </header>
+        <div class="page">
+            <header>
+                <div class="nav">
+                    <h1 class="nav-title">Profile</h1>
+                    <ul class="nav-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#" class="active">My Profile</a></li>
+                        <li><a href="#">Find Connections</a></li>
+                        <li><button class="btn">Sign Out</button></li>
+                    </ul>
+                </div>
+            </header>
+            <main>
+                <div class="leftCol">
+                    <div class="window1">
+                        <header>
+                            <img class="thumbnail" src="images/headShotSmall.png" alt="myPic">
+                        </header>
+                        <div class="content">
+                            <h1>Karl Zimmer</h1>
+                            <label><img class="button" src="images/map-marker.png"
+                                    onclick="showDialog({title:'Map', content:'eventually....this will be a map!!'})"
+                                    alt="map marker">Westcliffe
+                                Colorado</label>
+                            <p>
+                                Developer | Engineer | Problem Solver
+                                Master of shadows and the Internet!
+                            </p>
+                        </div>
+                        <footer>
+                            <img class="icon" src="images/gear.png" alt="gear icon"><a
+                                onclick="showDialog({title:'My Profile', content:'eventually....this will show an editable version of my profile!!!'})">edit
+                                profile</a>
+                        </footer>
+                    </div>
+                    <div class=window2>
+                        <header>
+                            Education
+                        </header>
+                        <div class="content">
+                            <h3>Coding Dojo - Full Stack Bootcamp</h3>
+                            <ul>
+                                <li>Jan 2023 - Jul 2023</li>
+                                <li>Double black belt in Python, MERN</li>
+                            </ul>
+                        </div>
+                        <footer></footer>
+                    </div>
+                </div>
+                <div class="rightCol">
+                    <div class="window2">
+                        <header>
+                            Connection Requests
+                        </header>
+                        <div class="content">
+                            <ul class="userList">
+                                <li>
+                                    <div onclick="showDialog({title:'Todd E', content:'eventually....this will show the profile of Todd E!!'})"
+                                        id="1" class="user">
+                                        <img class="icon" src="images/user-circle.png" alt="user icon">
+                                        Todd E
+                                    </div>
+                                    <div>
+                                        <img class="button" src="images/accept-circle.png" onclick="accept('1')"
+                                            title="accept" alt="accept icon">
+                                        <img class="button" src="images/close-circle.png" onclick="reject('1')"
+                                            title="reject" alt="close icon">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div onclick="showDialog({title:'Phil K', content:'eventually....this will show the profile of Phil K'})"
+                                        id="2" class="user">
+                                        <img class="icon" src="images/user-circle.png" alt="user icon">
+                                        Phil K
+                                    </div>
+                                    <div>
+                                        <img class="button" src="images/accept-circle.png" onclick="accept('2')"
+                                            title="accept" alt="accept icon">
+                                        <img class="button" src="images/close-circle.png" onclick="reject('2')"
+                                            title="reject" alt="close icon">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <footer></footer>
+                    </div>
+                    <div class="window2">
+                        <header>
+                            Your Connections
+                        </header>
+                        <div class="content">
+                            <ul id="connections" class="userList">
+                                <li>
+                                    <div class="user"
+                                        onclick="showDialog({title:'Adrien D', content:'eventually....this will show the profile of Adrien D!!'})">
+                                        <img class="icon" src="images/user-circle.png" alt="user icon">
+                                        Adrien D
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="user"
+                                        onclick="showDialog({title:'Anne J', content:'eventually....this will show the profile of Anne J!!'})">
+                                        <img class="icon" src="images/user-circle.png" alt="user icon">
+                                        Anne J
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="user"
+                                        onclick="showDialog({title:'Alayme T', content:'eventually....this will show the profile of Alayme T!!'})">
+                                        <img class="icon" src="images/user-circle.png" alt="user icon">
+                                        Alayme T
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="user"
+                                        onclick="showDialog({title:'Arry Y', content:'eventually....this will show the profile of Arry Y!!'})">
+                                        <img class="icon" src="images/user-circle.png" alt="user icon">
+                                        Arry Y
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <footer>
+                            <a
+                                onclick="showDialog({title:'user Profile', content:'eventually....this will show an expanded list of connections!!!'})">view
+                                more</a>
+                        </footer>
+                    </div>
+                </div>
+            </main>
+            <footer>
+            </footer>
+        </div>
+        <div id="shade" class="shade"></div>
+        <div id="dialog" class="window2 dialog">
+            <header id="dialogTitle">
+                Window Title Here
+            </header>
+            <div id="dialogContent" class="content">
+                <p>Window content here</p>
+            </div>
+            <footer><button onclick="closeDialog()">Done</button></footer>
+        </div>
+        <script src="scripts/scripts.js"></script>
+    </body>
+
+</html>
